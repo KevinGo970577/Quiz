@@ -38,27 +38,51 @@ public class Main {
                     System.out.println("Ingreso a la opcion de Celsius a Fahrenheit");
                     System.out.print("Ingrese el numero de grados Celsius ");
                     celsius = teclado.nextInt();
+                    if (celsius > 0 && celsius <= 16){
                     fahrenheit = (celsius*9/5)+32;
                     System.out.println("La conversion entre " + celsius +"° Celcius es: "+ fahrenheit + "° Fahrenheit");
                     salir = true;
+
+                    break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
+
                     break;
 
                 case 2:
                     System.out.println("Ingreso a la opcion de Celsius a Kelvin");
                     System.out.print("Ingrese el numero de grados Celsius ");
                     celsius = teclado.nextInt();
+                    if (celsius > 0 && celsius <= 16){
                     kelvin = (int) (celsius+273.15);
                     System.out.println("La conversion entre " + celsius +"° Celcius es: "+ kelvin + "° Kelvin");
                     salir = true;
+
+                    break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
 
                     break;
                 case 3:
                     System.out.println("Ingreso a la opcion de Celsius a Rankine");
                     System.out.print("Ingrese el numero de grados Celsius ");
                     celsius = teclado.nextInt();
+                    if (celsius > 0 && celsius <= 16){
                     rankine = (int) ((celsius+273.15)*9/5);
                     System.out.println("La conversion entre " + celsius +"° Celcius es: "+ rankine + "° Rankine");
                     salir = true;
+
+                    break;
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
 
                     break;
 
@@ -66,18 +90,35 @@ public class Main {
                     System.out.println("Ingreso a la opcion de Celsius a Réaumur");
                     System.out.print("Ingrese el numero de grados Celsius ");
                     celsius = teclado.nextInt();
+                    if (celsius > 0 && celsius <= 16){
                     reaumur = (celsius*4/5);
                     System.out.println("La conversion entre " + celsius +"° Celcius es: "+ reaumur + "° Réaumur");
                     salir = true;
 
                     break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
+
+                    break;
+
                 case 5:
                     System.out.println("Ingreso a la opcion de Fahrenheit a Celsius");
                     System.out.print("Ingrese el numero de grados Fahrenheit ");
                     fahrenheit = teclado.nextInt();
+                    if (fahrenheit > 0 && fahrenheit <= 16){
                     celsius = (fahrenheit-32)*5/9;
                     System.out.println("La conversion entre " + fahrenheit +"° Fahrenheit es: "+ celsius + "° Celsius");
                     salir = true;
+
+                    break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
 
                     break;
 
@@ -85,18 +126,34 @@ public class Main {
                     System.out.println("Ingreso a la opcion de Fahrenheit a Kelvin");
                     System.out.print("Ingrese el numero de grados Fahrenheit ");
                     fahrenheit = teclado.nextInt();
+                    if (fahrenheit > 0 && fahrenheit <= 16){
                     kelvin = (int) ((fahrenheit-32)*5/9+273.15);
                     System.out.println("La conversion entre " + fahrenheit +"° Fahrenheit es: "+ kelvin + "° Kelvin");
                     salir = true;
+
+                    break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    System.out.println(repeticion);
 
                     break;
                 case 7:
                     System.out.println("Ingreso a la opcion de Fahrenheit a Rankine");
                     System.out.print("Ingrese el numero de grados Fahrenheit ");
                     fahrenheit = teclado.nextInt();
+                    if (rankine > 0 && rankine <= 16){
                     rankine = (int) (fahrenheit+459.67);
                     System.out.println("La conversion entre " + fahrenheit + "° Fahrenheit es: "+ rankine + "° Rankine");
                     salir = true;
+
+                    break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
 
                     break;
 
@@ -104,18 +161,34 @@ public class Main {
                     System.out.println("Ingreso a la opcion de Fahrenheit a Réaumur");
                     System.out.print("Ingrese el numero de grados Fahrenheit ");
                     fahrenheit = teclado.nextInt();
+                    if (fahrenheit > 0 && fahrenheit <= 16){
                     reaumur = (fahrenheit-32)*4/9;
                     System.out.println("La conversion entre " + fahrenheit +"° Fahrenheit es: "+ reaumur + "° Réaumur");
                     salir = true;
+
+                    break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
 
                     break;
                 case 9:
                     System.out.println("Ingreso a la opcion de Kelvin a Celsius");
                     System.out.print("Ingrese el numero de grados Kelvin ");
                     kelvin = teclado.nextInt();
+                    if (kelvin > 0 && kelvin <= 16){
                     celsius = (int) (kelvin-273.15);
                     System.out.println("La conversion entre " + kelvin +"° Kelvin es: "+ celsius + "° Celsius");
                     salir = true;
+
+                    break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
 
                     break;
 
@@ -123,18 +196,34 @@ public class Main {
                     System.out.println("Ingreso a la opcion de Kelvin a Fahrenheit");
                     System.out.print("Ingrese el numero de grados Kelvin ");
                     kelvin = teclado.nextInt();
+                    if (kelvin > 0 && kelvin <= 16){
                     fahrenheit = (int) ((kelvin-273.15)*9/5+32);
                     System.out.println("La conversion entre " + kelvin +"° Kelvin es: "+ fahrenheit + "° Fahrenheit");
                     salir = true;
+
+                    break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
 
                     break;
                 case 11:
                     System.out.println("Ingreso a la opcion de Kelvin a Rankine");
                     System.out.print("Ingrese el numero de grados Kelvin ");
                     kelvin = teclado.nextInt();
+                    if (kelvin > 0 && kelvin <= 16){
                     rankine = (kelvin*9/5);
                     System.out.println("La conversion entre " + kelvin +"° Kelvin es: "+ rankine + "° Rankine");
                     salir = true;
+
+                    break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
 
                     break;
 
@@ -142,18 +231,34 @@ public class Main {
                     System.out.println("Ingreso a la opcion de Kelvin a Réaumur");
                     System.out.print("Ingrese el numero de grados Kelvin ");
                     kelvin = teclado.nextInt();
+                    if (kelvin > 0 && kelvin <= 16){
                     rankine = (int) ((kelvin-273.15)*4/5);
                     System.out.println("La conversion entre " + kelvin +"° Kelvin es: "+ reaumur + "° Réaumur");
                     salir = true;
+
+                    break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
 
                     break;
                 case 13:
                     System.out.println("Ingreso a la opcion de Rankine a Celcius");
                     System.out.print("Ingrese el numero de grados Rankine ");
                     rankine = teclado.nextInt();
+                    if (rankine > 0 && rankine <= 16){
                     celsius = (int) ((rankine-491.67)*5/9);
                     System.out.println("La conversion entre " + rankine +"° Rankine es: "+ celsius + "° Celsius");
                     salir = true;
+
+                    break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
 
                     break;
 
@@ -161,18 +266,32 @@ public class Main {
                     System.out.println("Ingreso a la opcion de Rankine a Fahrenheit");
                     System.out.print("Ingrese el numero de grados Rankine ");
                     rankine = teclado.nextInt();
+                    if (rankine > 0 && rankine <= 16){
                     fahrenheit = (int) (rankine-459.67);
                     System.out.println("La conversion entre " + rankine +"° Rankine es: "+ fahrenheit + "° Fahrenheit");
                     salir = true;
 
                     break;
+
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
+
+                    break;
+
                 case 15:
                     System.out.println("Ingreso a la opcion de Rankine a Kelvin");
                     System.out.print("Ingrese el numero de grados Rankine ");
                     rankine = teclado.nextInt();
-                    kelvin = rankine*5/9;
-                    System.out.println("La conversion entre " + rankine +"° Rankine es: "+ kelvin + "° Kelvin");
-                    salir = true;
+                    if (rankine > 0 && rankine <= 16) {
+                        kelvin = rankine * 5 / 9;
+                        System.out.println("La conversion entre " + rankine + "° Rankine es: " + kelvin + "° Kelvin");
+                        salir = true;
+                    }else
+                        System.out.println("OPCION INVALIDA");
+                    System.out.println();
+                    repeticion= true;
 
                     break;
 
